@@ -1,0 +1,40 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CalLeakTest" GeneratedClassName="CalLeakConfigs">
+  <Profiles />
+  <Settings>
+    <Setting Name="SqlConString" Type="(Connection string)" Scope="Application">
+      <DesignTimeValue Profile="(Default)">&lt;?xml version="1.0" encoding="utf-16"?&gt;
+&lt;SerializableConnectionString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema"&gt;
+  &lt;ConnectionString&gt;Data Source=wpsqldb21;Initial Catalog=VpdOF;User ID=VpdTest;Password=Vpd@123&lt;/ConnectionString&gt;
+&lt;/SerializableConnectionString&gt;</DesignTimeValue>
+      <Value Profile="(Default)">Data Source=wpsqldb21;Initial Catalog=VpdOF;User ID=VpdTest;Password=Vpd@123</Value>
+    </Setting>
+    <Setting Name="NistModel" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">F8473SPL</Value>
+    </Setting>
+    <Setting Name="NistSerial" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">TL5001</Value>
+    </Setting>
+    <Setting Name="ComPort" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">COM1</Value>
+    </Setting>
+    <Setting Name="NistDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Varian -7 Range Helium Leak</Value>
+    </Setting>
+    <Setting Name="NistReportNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">290118-17</Value>
+    </Setting>
+    <Setting Name="StationDescription" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">Calibrated Leak Calibration Station</Value>
+    </Setting>
+    <Setting Name="StationModelNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">1769-It6</Value>
+    </Setting>
+    <Setting Name="StationSerialNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">CLSCS-1A</Value>
+    </Setting>
+    <Setting Name="StationReportNumber" Type="System.String" Scope="Application">
+      <Value Profile="(Default)">MSR1403002</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

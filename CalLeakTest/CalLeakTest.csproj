@@ -1,0 +1,145 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{FC5C4EE8-9553-45FF-8445-A4A1F624BDB5}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CalLeakTest</RootNamespace>
+    <AssemblyName>CalLeakTest</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\..\..\Source\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>
+    </DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Agilent.TMFramework.InstrumentIO, Version=2.1.8910.0, Culture=neutral, PublicKeyToken=7a01cdb2a9131f73, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\Source - Copy\Agilent.TMFramework.InstrumentIO.dll</HintPath>
+    </Reference>
+    <Reference Include="PluginSequence, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>obj\Release\CalLeakTest.PRJ\bin\lib\PluginSequence.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CalLeakConfigs.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>CalLeakConfigs.settings</DependentUpon>
+    </Compile>
+    <Compile Include="FormNewUUT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNewUUT.Designer.cs">
+      <DependentUpon>FormNewUUT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNistLeak.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNistLeak.Designer.cs">
+      <DependentUpon>FormNistLeak.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MfgTests\ButtonUp.cs" />
+    <Compile Include="MfgTests\CalLeakTest.cs" />
+    <Compile Include="MfgTests\InitStation.cs" />
+    <Compile Include="MfgTests\SysMaintenance.cs" />
+    <Compile Include="MfgTests\SystemCal.cs" />
+    <Compile Include="Models\CalLeakData.cs" />
+    <Compile Include="Models\EquipmentTracking.cs" />
+    <Compile Include="Models\NistData.cs" />
+    <Compile Include="Models\SernumInfo.cs" />
+    <Compile Include="PerformanceTestManager.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\DateTimeHelper.cs" />
+    <Compile Include="Repositories\SqlHelper.cs" />
+    <Compile Include="Repositories\TestHelper.cs" />
+    <Compile Include="TestBlocked.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TestBlocked.Designer.cs">
+      <DependentUpon>TestBlocked.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormNewUUT.resx">
+      <DependentUpon>FormNewUUT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNistLeak.resx">
+      <DependentUpon>FormNistLeak.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TestBlocked.resx">
+      <DependentUpon>TestBlocked.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="CalLeakConfigs.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>CalLeakConfigs.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\SerialPortIO\SerialPortIO.csproj">
+      <Project>{05fc74ae-ee32-4896-b653-86ebe23fe62e}</Project>
+      <Name>SerialPortIO</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SystemIO\SystemIO.csproj">
+      <Project>{F4914074-C5D5-4063-B9A4-181607C34A4E}</Project>
+      <Name>SystemIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="VisaComLib">
+      <Guid>{DB8CBF00-D6D3-11D4-AA51-00A024EE30BD}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>2</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Connected Services\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

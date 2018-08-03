@@ -1,0 +1,238 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AutoZeroStatus" xml:space="preserve">
+    <value>?AZ&lt;0</value>
+    <comment>Reports the status of the Auto-zero &lt; 0 function, ON or OFF.</comment>
+  </data>
+  <data name="CalLeakRef" xml:space="preserve">
+    <value>?INTEXT</value>
+    <comment>Indicates which leak, Internal or External has been selected for use during calibration.</comment>
+  </data>
+  <data name="ContraModeXoverPressure" xml:space="preserve">
+    <value>?CL-XFER</value>
+    <comment>Reports the currently stored contra-flow mode crossover pressure.</comment>
+  </data>
+  <data name="ControlPanelLockStatus" xml:space="preserve">
+    <value>?CPLOCKOUT</value>
+    <comment>Reports the status of the control panel lockout feature, ON or OFF.</comment>
+  </data>
+  <data name="DateTime" xml:space="preserve">
+    <value>?CURRDATE</value>
+    <comment>Reports the current system date and time in the following format : 3 05/25/2005 04:19:03.35 1</comment>
+  </data>
+  <data name="DisplayBarGraphFormat" xml:space="preserve">
+    <value>?DISPLAY</value>
+    <comment>Reports what the display bar graph is set to, log or lin.</comment>
+  </data>
+  <data name="DisplayBoardStatus" xml:space="preserve">
+    <value>?DB</value>
+    <comment>State bits for display board</comment>
+  </data>
+  <data name="Emission" xml:space="preserve">
+    <value>?EMISSION</value>
+    <comment>Reports the emission value.</comment>
+  </data>
+  <data name="ExponentNumber" xml:space="preserve">
+    <value>?EXPONENT</value>
+    <comment>Reports the current manual-mode exponent with a two-character (minus followed by one digit) number. The exponent is within the least sensitive range (as reported by ?RANGE) and the three lower (more negative exponent) ranges. See also INIT-EXPONENT.</comment>
+  </data>
+  <data name="ExtCalLeakValue" xml:space="preserve">
+    <value>?EXTLEAK</value>
+    <comment>Reports the currently stored value of the external calibrated leak.</comment>
+  </data>
+  <data name="Gain" xml:space="preserve">
+    <value>?GAIN</value>
+    <comment>Reports the system gain value by returning a three-character number consisting of a two-digit gain factor with a decimal point after the first digit</comment>
+  </data>
+  <data name="IonChamber" xml:space="preserve">
+    <value>?IONCHAMBER</value>
+    <comment>Reports the ion chamber value.</comment>
+  </data>
+  <data name="Language" xml:space="preserve">
+    <value>?LANGUAGE</value>
+    <comment>Reports the language that has been selected to display on the front panel (0=English, 1=French, 2=German, 3=Korean, 4=Spanish, 5=Japanese, 6=Chinese).</comment>
+  </data>
+  <data name="LastCalStatus" xml:space="preserve">
+    <value>?CALOK</value>
+    <comment>Reports the status of the last calibration.</comment>
+  </data>
+  <data name="Offset" xml:space="preserve">
+    <value>?OFFSET</value>
+    <comment>Reports the offset value</comment>
+  </data>
+  <data name="unknown" xml:space="preserve">
+    <value>?EEPTYPE</value>
+  </data>
+  <data name="VGain" xml:space="preserve">
+    <value>.EEVGAIN</value>
+    <comment>Reports the VGain value</comment>
+  </data>
+  <data name="ValveState" xml:space="preserve">
+    <value>?VALVESTATE</value>
+    <comment>To get the LD state (MidStage)</comment>
+  </data>
+  <data name="ExternalLeakStd" xml:space="preserve">
+    <value>EXTERNAL</value>
+    <comment>Set LD to use External Cal Leak Reference</comment>
+  </data>
+  <data name="GetIntOrExtLeakStd" xml:space="preserve">
+    <value>?INTEXT</value>
+    <comment>Get current Cal Leak reference</comment>
+  </data>
+  <data name="InitExtLeak" xml:space="preserve">
+    <value>INIT-EXTLEAK</value>
+    <comment>Set the value of external cal leak into the LD</comment>
+  </data>
+  <data name="ReadExtLeakVal" xml:space="preserve">
+    <value>?EXTLEAK</value>
+    <comment>Get the stored Ext leak value</comment>
+  </data>
+  <data name="Calibrate" xml:space="preserve">
+    <value>CALIBRATE</value>
+    <comment>Initiate VS LeakDetector Calibration</comment>
+  </data>
+  <data name="Hold" xml:space="preserve">
+    <value>KEEP</value>
+    <comment>Causes the leak detector to close most valves and enter the Hold state.</comment>
+  </data>
+  <data name="LeakRate" xml:space="preserve">
+    <value>?LEAK</value>
+    <comment>Reports a six-character number consisting of a two-digit leak rate mantissa with decimal point after the first digit followed by E–  then a two digit number, which is the leak rate range exponent (e.g., 1.3E-08).</comment>
+  </data>
+  <data name="Rough" xml:space="preserve">
+    <value>ROUGH</value>
+    <comment>To start leak test</comment>
+  </data>
+  <data name="IsCalOK" xml:space="preserve">
+    <value>?CALOK</value>
+    <comment>Get the last calibration status on the LD</comment>
+  </data>
+  <data name="NoSniff" xml:space="preserve">
+    <value>NOSNIFF</value>
+    <comment>To turn off high pressure test. (Go to FINETEST)</comment>
+  </data>
+  <data name="UnlockFullCommand" xml:space="preserve">
+    <value>XYZZY</value>
+  </data>
+  <data name="Vent" xml:space="preserve">
+    <value>VENT</value>
+    <comment>Vent the Leak Detector</comment>
+  </data>
+</root>
